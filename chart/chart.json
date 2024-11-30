@@ -1,0 +1,16 @@
+
+{
+  "pie": {
+    "labels": ["Red", "Blue", "Yellow"],
+    "data": [40, 30, 30],
+    "colors": ["#FF5733", "#33B5FF", "#FFEB33"],
+    "hoverColors": ["#FF4C00", "#0099CC", "#FFCC00"]
+  },
+  "bar": {
+    "labels": ["January", "February", "March", "April", "May"],
+    "label": "Sales (in USD)",
+    "data": [50, 100, 75, 125, 150],
+    "colors": "#33B5FF",
+    "borderColor": "#0099CC"
+  }
+}

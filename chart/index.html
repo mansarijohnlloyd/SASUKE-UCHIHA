@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <h2>My Chart</h2>
+
+    <div class="chart-container">
+        <!-- Pie Chart Section -->
+        <div>
+            <h3 class="chart-title">Pie Chart</h3>
+            <canvas id="myPieChart" width="400" height="400"></canvas>
+        </div>
+
+        <!-- Bar Chart Section -->
+        <div>
+            <h3 class="chart-title">Bar Chart</h3>
+            <canvas id="myBarChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+
+    <!-- Controls Section -->
+    <div class="controls">
+        <h3>Adjust Pie Chart Data</h3>
+        <div class="control-item">
+            <label for="pieData1">Red Slice Value:</label>
+            <input type="number" id="pieData1" value="40" min="0" max="100" />
+        </div>
+        <div class="control-item">
+            <label for="pieData2">Blue Slice Value:</label>
+            <input type="number" id="pieData2" value="30" min="0" max="100" />
+        </div>
+        <div class="control-item">
+            <label for="pieData3">Yellow Slice Value:</label>
+            <input type="number" id="pieData3" value="30" min="0" max="100" />
+        </div>
+        <div class="control-item">
+            <label for="pieColor1">Red Slice Color:</label>
+            <input type="color" id="pieColor1" value="#FF5733" />
+        </div>
+        <div class="control-item">
+            <label for="pieColor2">Blue Slice Color:</label>
+            <input type="color" id="pieColor2" value="#33B5FF" />
+        </div>
+        <div class="control-item">
+            <label for="pieColor3">Yellow Slice Color:</label>
+            <input type="color" id="pieColor3" value="#FFEB33" />
+        </div>
+
+        <h3>Adjust Bar Chart Data</h3>
+        <div class="control-item">
+            <label for="barData1">January:</label>
+            <input type="number" id="barData1" value="50" min="0" />
+        </div>
+        <div class="control-item">
+            <label for="barData2">February:</label>
+            <input type="number" id="barData2" value="100" min="0" />
+        </div>
+        <div class="control-item">
+            <label for="barData3">March:</label>
+            <input type="number" id="barData3" value="75" min="0" />
+        </div>
+        <div class="control-item">
+            <label for="barData4">April:</label>
+            <input type="number" id="barData4" value="125" min="0" />
+        </div>
+        <div class="control-item">
+            <label for="barData5">May:</label>
+            <input type="number" id="barData5" value="150" min="0" />
+        </div>
+        <div class="control-item">
+            <label for="barColor">Bar Color:</label>
+            <input type="color" id="barColor" value="#33B5FF" />
+        </div>
+    </div>
+
+    <script src="chart.js"></script>
+</body>
+</html>
